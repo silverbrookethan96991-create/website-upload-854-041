@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://vercelcn.com/ads-widget.js"></script>
+  <title>搜索-精选电视剧大全-热门好看的电视剧大全-全集高清观看</title>
+  <meta name="description" content="搜索精选电视剧大全中的剧集、电影、地区、年份和题材内容。">
+  <meta name="keywords" content="精选电视剧大全,热门电视剧,高清电视剧,全集观看,高分电视剧,热播剧,电视剧合集,电视剧搜索">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="./index.html" aria-label="高清剧集大全">
+      <span class="brand-mark">✦</span>
+      <span>高清剧集大全</span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./category/domestic-drama.html">国产剧</a><a href="./category/western-drama.html">欧美剧</a><a href="./category/japan-korea.html">日韩剧</a><a href="./category/mystery-crime.html">悬疑推理</a><a href="./category/romance-story.html">爱情剧情</a><a href="./category/action-adventure.html">动作冒险</a>
+      <a href="./ranking.html">排行榜</a>
+    </nav>
+    <form class="nav-search" action="./search.html" method="get">
+      <input name="q" type="search" placeholder="搜索剧集、地区、题材" aria-label="搜索">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" aria-label="打开菜单">☰</button>
+  </div>
+  <div class="mobile-panel">
+    <form class="mobile-search" action="./search.html" method="get">
+      <input name="q" type="search" placeholder="搜索剧集、地区、题材" aria-label="搜索">
+      <button type="submit">搜索</button>
+    </form>
+    <a href="./index.html">首页</a>
+    <a href="./categories.html">分类总览</a>
+    <a href="./category/domestic-drama.html">国产剧</a><a href="./category/western-drama.html">欧美剧</a><a href="./category/japan-korea.html">日韩剧</a><a href="./category/mystery-crime.html">悬疑推理</a><a href="./category/romance-story.html">爱情剧情</a><a href="./category/action-adventure.html">动作冒险</a><a href="./category/comedy-variety.html">喜剧综艺</a><a href="./category/sci-fi-fantasy.html">科幻奇幻</a><a href="./category/history-costume.html">古装历史</a><a href="./category/animation-family.html">动漫少儿</a>
+    <a href="./ranking.html">排行榜</a>
+  </div>
+</header>
+<main class="page-main">
+  <section class="page-hero small-hero">
+    <h1>搜索片库</h1>
+    <p>输入剧名、地区、年份或题材关键词，快速查找相关内容。</p>
+    <form class="search-page-form" action="search.html" method="get">
+      <input id="searchInput" name="q" type="search" placeholder="请输入关键词" aria-label="搜索关键词">
+      <button type="submit">搜索</button>
+    </form>
+  </section>
+  <section id="searchResults" class="movie-grid search-results"></section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">高清剧集大全</div>
+      <p>精选各类电视剧内容，覆盖热播剧、高分剧与经典剧，适合按题材和热度查看。</p>
+    </div>
+    <div>
+      <h2>快速入口</h2>
+      <div class="footer-links">
+        <a href="./index.html">首页</a>
+        <a href="./categories.html">分类总览</a>
+        <a href="./ranking.html">排行榜</a>
+        <a href="./search.html">搜索</a>
+      </div>
+    </div>
+    <div>
+      <h2>热门分类</h2>
+      <div class="footer-links"><a href="./category/domestic-drama.html">国产剧</a><a href="./category/western-drama.html">欧美剧</a><a href="./category/japan-korea.html">日韩剧</a><a href="./category/mystery-crime.html">悬疑推理</a><a href="./category/romance-story.html">爱情剧情</a></div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 高清剧集大全 · 热门好看的电视剧大全</div>
+</footer>
+<script src="assets/movies-data.js"></script>
+
+<script src="./assets/app.js" defer></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
